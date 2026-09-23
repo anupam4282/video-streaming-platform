@@ -1,0 +1,1 @@
+document.addEventListener("DOMContentLoaded",()=>{const i=document.getElementById("videoInput"),x=document.getElementById("fileInfo");if(i&&x)i.onchange=()=>{const f=i.files[0];x.textContent=f?`${f.name} · ${(f.size/1048576).toFixed(1)} MB`:"MP4, WebM, MOV, MKV, AVI, M4V"};document.querySelectorAll(".alert").forEach(a=>setTimeout(()=>a.remove(),4500));});
